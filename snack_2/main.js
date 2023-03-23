@@ -3,7 +3,7 @@
 Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘Paperino’] */
 
 const bikes = ['giant','faNTIC','BIANCHI','BMC','galetti'];
-
+let Bikes =[];
 bikes.forEach(bike => {
    // console.log((bike.toLowerCase()));
 
@@ -15,6 +15,11 @@ bikes.forEach(bike => {
 
     const remainingLetters = wordCapitalized.slice(1)
 
-    const word = firstLetterCap + remainingLetters   
-    console.log(word);
+    const word = firstLetterCap + remainingLetters
+
+    Bikes.push(word);
+
+    //console.log(word);
 });
+
+console.log(Bikes);

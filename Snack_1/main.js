@@ -85,27 +85,27 @@ const cars = [
 //console.log(cars[2].alimentazione);
 
 
-const benzinaCars = cars.filter((car,index) => {
-    if(cars[index].alimentazione === 'benzina'){
+const benzinaCars = cars.filter((car => {
+    if(car.alimentazione === 'benzina'){
         return true;
     }
     return false;
-})
+}))
 console.log(benzinaCars); 
 
-const dieselCars = cars.filter((car,index) => {
-    if(cars[index].alimentazione === 'diesel'){
+const dieselCars = cars.filter((car => {
+    if(car.alimentazione === 'diesel'){
         return true;
     }
     return false;
-})
+}))
 console.log(dieselCars);
 
 
-const otherCars = cars.filter((car,index) => {
-    if(!cars[index].alimentazione === 'diesel' && !cars[index].alimentazione === 'benzina'){
+const otherCars = cars.filter((car => {
+    if(car.alimentazione !== 'diesel' && car.alimentazione !== 'benzina'){
         return true;
     }
     return false;
-})
+}))
 console.log(otherCars);

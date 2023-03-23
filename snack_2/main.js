@@ -3,7 +3,7 @@
 Es: [‘pippo’, ‘PLUTO’, ‘Paperino’] => [‘Pippo’, ‘Pluto’, ‘Paperino’] */
 
 const bikes = ['giant','faNTIC','BIANCHI','BMC','galetti'];
-let Bikes =[];
+/* let Bikes =[];
 bikes.forEach(bike => {
    // console.log((bike.toLowerCase()));
 
@@ -20,6 +20,22 @@ bikes.forEach(bike => {
     Bikes.push(word);
 
     //console.log(word);
-});
+}); */
 
-console.log(Bikes);
+
+const BikesFirstLetterUppercase = bikes.map(bike => {
+    
+    const wordCapitalized = bike.toLowerCase()
+
+    const firstLetter = wordCapitalized.charAt(0)
+
+    const firstLetterCap = firstLetter.toUpperCase()
+
+    const remainingLetters = wordCapitalized.slice(1)
+
+    const word = firstLetterCap + remainingLetters
+    
+    return word;
+})
+
+console.log(BikesFirstLetterUppercase);

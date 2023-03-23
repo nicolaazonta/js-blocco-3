@@ -100,3 +100,12 @@ const dieselCars = cars.filter((car,index) => {
     return false;
 })
 console.log(dieselCars);
+
+
+const otherCars = cars.filter((car,index) => {
+    if(!cars[index].alimentazione === 'diesel' && !cars[index].alimentazione === 'diesel'){
+        return true;
+    }
+    return false;
+})
+console.log(otherCars);

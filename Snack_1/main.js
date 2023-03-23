@@ -103,7 +103,7 @@ console.log(dieselCars);
 
 
 const otherCars = cars.filter((car,index) => {
-    if(!cars[index].alimentazione === 'diesel' && !cars[index].alimentazione === 'diesel'){
+    if(!cars[index].alimentazione === 'diesel' && !cars[index].alimentazione === 'benzina'){
         return true;
     }
     return false;
